@@ -1,13 +1,17 @@
 # genpass
 
-FIXME: write description
+A basic random password generator ... more Clojure practice :)
 
 ## Usage
 
-FIXME: write
+  user=> (use 'genpass.core)
+  nil
+  user=> (genpass.core/password)
+  "aZZPSO6Z"
+  user=> 
 
 ## License
 
-Copyright (C) 2011 FIXME
+Copyright (C) 2011 Nelo Onyiah
 
 Distributed under the Eclipse Public License, the same as Clojure.
