@@ -1,4 +1,5 @@
-(ns genpass.core)
+(ns genpass.core
+  (:gen-class))
 
 (defn- chars-for
   [start end]
@@ -20,5 +21,5 @@
                 (recur (dec n) (conj pass (rand-nth (concat caps lows numbers symbols)))))))))
 
 (defn -main
-  ([]  (password))
-  ([n] (password (Integer. n))))
+  ([]  (println (password)))
+  ([n] (println (password (Integer. n)))))
