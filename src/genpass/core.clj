@@ -18,3 +18,7 @@
               (if (>= 0 n)
                 pass
                 (recur (dec n) (conj pass (rand-nth (concat caps lows numbers symbols)))))))))
+
+(defn -main
+  ([]  (password))
+  ([n] (password (Integer. n))))
